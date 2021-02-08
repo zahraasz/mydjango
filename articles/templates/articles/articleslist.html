@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang = "en" dir = "ltr">
+<head>
+    <meta charset="utf-8">
+    <title> Articles </title>
+
+</head>
+    <body style="background-image:url(body-bg39.png)">
+        <h1> articles list </h1>
+        {% for article in Article  %} 
+        <h2><a href="#">{{Article.title}}</a></h2>
+        <p>{{Article.snippet}}</p>
+        <p>{{Article.date}}</p>
+        {% endfor %}
+
+    </body>
+</html>
